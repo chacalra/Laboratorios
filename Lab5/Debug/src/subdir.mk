@@ -4,20 +4,20 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/lab5.c 
+../src/Ejercicio\ del\ lab\ 5.c 
 
 C_DEPS += \
-./src/lab5.d 
+./src/Ejercicio\ del\ lab\ 5.d 
 
 OBJS += \
-./src/lab5.o 
+./src/Ejercicio\ del\ lab\ 5.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes
-src/%.o: ../src/%.c src/subdir.mk
+src/Ejercicio\ del\ lab\ 5.o: ../src/Ejercicio\ del\ lab\ 5.c src/subdir.mk
 	@echo 'Building file: $<'
-	@echo 'Invoking: Cross GCC Compiler'
-	gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	@echo 'Invoking: GCC C Compiler'
+	gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ejercicio del lab 5.d" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -25,7 +25,7 @@ src/%.o: ../src/%.c src/subdir.mk
 clean: clean-src
 
 clean-src:
-	-$(RM) ./src/lab5.d ./src/lab5.o
+	-$(RM) ./src/Ejercicio\ del\ lab\ 5.d ./src/Ejercicio\ del\ lab\ 5.o
 
 .PHONY: clean-src
 
